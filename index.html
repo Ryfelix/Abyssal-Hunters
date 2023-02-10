@@ -1,22 +1,28 @@
+<!DOCTYPE html>
+
 <!--NAMA  : Ryan Akbar Ramadhan-->
 <!--NIM   : 10122479-->
 <!--KELAS : IF - 8 -->
 
-<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Arknights | Abyssal Hunters |
-        </title>
+        <title>Arknights | Abyssal Hunters |</title>
+        <meta charset="UTF-8">
         <link rel="icon" type="image/x-icon" href="../AbyssalHunter/multimedia/images/Rhodes_Logo.png">
         <link rel="stylesheet" type="text/css" href="../AbyssalHunter/css/main.css">
+        
     </head>
     <body align="center">
         <div class="container">
             <div>
                 <header>
                     <div class="sec1 sec_img">
-                        <h1 class="kotak" id="sec-1">Arknights</h1>
-                        <section class="sect1">
+                        <div class="mainheadborder" id="sec-1">
+                            <div class="logo">
+                                <img src="./multimedia/images/ArknightsLogo.png" width="70%">
+                            </div>
+                        </div>
+                        <section>
                             <div class="kotak-story">
                                 <p>
                                     Arknights is a mobile game developed by Hypergryph.
@@ -36,15 +42,29 @@
                                     <span class="red">The Reunion movement,</span>
                                     <br>A militant group waging war on the despotic governments of Terra.
                                 </p>
+                                <div id="slider">
+                                    <ul id="slideWrap">
+                                        <li><img src="./multimedia/images/ak_bg4.png"></li>
+                                        <li><img src="./multimedia/images/ak_bg2.png"></li>
+                                        <li><img src="./multimedia/images/ak_bg3.png"></li>
+                                        <li><img src="./multimedia/images/ak_bg1.jpg"></li>
+                                        <li><img src="./multimedia/images/ak_bg5.png"></li>
+                                    </ul>
+                            
+                                    <a id="prev">&#8810;</a> 
+                                    <a id="next">&#8811;</a>
+                                
+                                    <script defer src="./js/slider.js"></script>
+                                </div>
                                 <a href="#sec-2">Descend</a>
                             </div>
                         </section>
                     </div>
                 </header>
-                
+                <!---->
                 <main>
-                    <div class="sec2 sec_img">           
-                        <section class="sect2" id="sec-2">
+                    <div class="sec2 sec_img">          
+                        <section id="sec-2">
                             <div class="kotak-story">
                                 <h1>Abyssal Hunters</h1>
                                 <br>
@@ -60,31 +80,49 @@
                                     Their eerie background makes them both mysterious
                                     and dangerous to the land-dwellers of Terra.
                                 </p>
+                                <div id="slider2">
+                                    <ul id="slideWrap2">
+                                        <li><img src="./multimedia/images/abyss_bg1.png"></li>
+                                        <li><img src="./multimedia/images/abyss_bg2.png"></li>
+                                        <li><img src="./multimedia/images/abyss_bg3.png"></li>
+                                        <li><img src="./multimedia/images/abyss_bg4.png"></li>
+                                        <li><img src="./multimedia/images/abyss_bg5.png"></li>
+                                    </ul>
+                            
+                                    <a id="prev2">&#8810;</a> 
+                                    <a id="next2">&#8811;</a>
+                                    
+                                    <script defer src="./js/slider2.js"></script>
+                                </div>
                                 <a href="#sec-3">Descend</a>
                             </div>
                         </section>
-                    </div>
-                    <div class="sec3 sec_img">
-                        <section class="sect3" id="sec-3">
-                            <div class="kotak">
-                                <table cellpadding="10" style="width: 1000px; background-color: rgba(0, 0, 0, 0.547);">
-                                    <tr>
-                                        <td><a href="../AbyssalHunter/pages/SqMembers.html">Squad Formation</a></td>
-                                        <td></td>
-                                        <td><a href="../AbyssalHunter/pages/SqBackstory.html">About Squad</a></td>
-                                    </tr> 
-                                </table>
+                        <!---->
+                            <div class="sec3 sec_img">
+                                <div id="sec-3">
+                                    <section>
+                                        <div class="kotak">
+                                            <table cellpadding="10" style="width: 1000px;">
+                                                <tr>
+                                                    <td><a href="../AbyssalHunter/pages/SqMembers.html">Squad Formation</a></td>
+                                                    <td></td>
+                                                    <td><a href="../AbyssalHunter/pages/SqBackstory.html">About Squad</a></td>
+                                                </tr> 
+                                            </table>
+                                        </div>
+
+                                    </section>
+                                    <div>
+                                        <div class="backto-top">
+                                            <a href="#sec-1">Back to The Surface</a>
+                                        </div>
+                                    </div> 
+                                </div> 
                             </div>  
-                        </section>
-                        <div class="kotak">
-                            <a href="#sec-1">Back to The Surface</a>
                         </div>
                     </div>
                 </main>
             </div>
-            <footer>
-                Footer
-            </footer>
         </div>
     </body>    
 </html>

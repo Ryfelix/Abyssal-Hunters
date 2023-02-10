@@ -19,12 +19,7 @@ html {
 
 body {
     margin: 0px;
-}
-
-
-footer {
-    background-color: rgba(30, 30, 30, 0.71);
-    height: 150px;
+    padding: 0px;
 }
 
 .container {
@@ -32,6 +27,32 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+.mainborder {
+    background: rgba(74, 74, 74, 0.792);
+    margin-left: 15%;
+    margin-right: 15%;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.mainheadborder {
+    background: rgba(24, 24, 24, 0.708);
+    margin-left: 0px;
+    margin-right: 1.5px;
+    height: 120px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.mainheadborder .logo {
+    position: absolute;
+    top: -25px;
+    left: 35%;
+    margin-top: 12px;
 }
 
 .sec1 {
@@ -46,27 +67,12 @@ footer {
     background-image: url("../multimedia/images/coast.png");
 }
 
-.sect1 {
+section {
     display: grid;
     margin: auto;
     min-height: 100vh;
     align-content: center;
 }
-
-.sect2 {
-    display: grid;
-    margin: auto;
-    min-height: 100vh;
-    align-content: center;
-}
-
-.sect3 {
-    display: grid;
-    margin: auto;
-    min-height: 100vh;
-    align-content: center;
-}
-
 
 .sec_img {
     height: 100%;
@@ -77,11 +83,10 @@ footer {
 
 
 .kotak {
-    display: flexbox;
+    display: grid;
     margin: auto;
     position: relative;
     align-content: center;
-    position: center;
     height: fit-content;
     width: fit-content;
     border-radius: 5px;
@@ -89,13 +94,36 @@ footer {
     background-color: rgba(24, 24, 24, 0.708);
 }
 
+.kotak .back {
+    border-radius: 5px;
+    bottom: 0px;
+    position: relative;
+}
+
+.backto-top {
+    background-color: rgba(120, 120, 120, 0.313);
+    display: flexbox;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+    bottom: 50px;
+    font-size: 24px;
+}
+
+.kotak td {
+    font-size: 24px;
+}
+
 .kotak-kcl {
     display: flexbox;
     position: relative;
     align-content: center;
     margin-left: 20px;
-    top: 50%;
-    height: fit-content;
+    height: auto;
     width: fit-content;
     border-radius: 5px;
     padding: 10px;
@@ -133,7 +161,8 @@ footer {
 .tablegeneral {
     background-color: rgba(42, 42, 42, 0.52);
     border-spacing: 5px; 
-    border-radius: 8px; 
+    border-radius: 8px;
+    top: -50%; 
     padding: 5px; 
     float: right; 
     margin-right: 20px;
@@ -353,4 +382,64 @@ button {
 #imghov {
     margin: auto;
 }
+
+#slider, #slider2 {
+    display: flexbox;
+    position: relative;
+    margin: auto;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#slider ul, #slider2 ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 1000%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+    left: 0;
+}
+
+#slider ul li, #slider2 ul li {
+    position: relative;
+    height: 100%;
+    float: left;
+}
+
+#slider ul li img, #slider2 ul li img {
+    width: 700px;
+    height: 400px;
+}
+
+#slider #prev,
+#slider #next,
+#slider2 #prev2,
+#slider2 #next2 {
+    width: -100%;
+    cursor: pointer;
+    line-height: 50px;
+    font-size: 3rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 10%;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 150ms ease;
+}
+
+#slider #prev, #slider2 #prev2 {
+    left: 0px;
+}
+
+#slider #next, #slider2 #next2 {
+    right: 0px;
+}
+
 

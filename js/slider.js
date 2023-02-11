@@ -1,3 +1,6 @@
+///NAMA   : Ryan Akbar Ramadhan
+///NIM    : 10122479
+///KELAS  : IF - 8
 var responsiveSlider = function() {
 
     var slider = document.getElementById("slider");
